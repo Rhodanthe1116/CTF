@@ -14,4 +14,3 @@ phi = (p - 1) * (q1 - 1)
 d = pow(e, -1, phi)
 m = pow(c, d, n1)
 print(long_to_bytes(m, 128))
-
