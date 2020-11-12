@@ -2,6 +2,9 @@
 # Python 3.8.5
 '''
 Change log:
+    Oct 28, 2020 (v1.3): allow empty sid directory in the zip file
+    Oct 26, 2020 (v1.2): the sid directory could be omitted
+    Oct 25, 2020 (v1.1): be lenient about zip filenames
     Oct 23, 2020 (v1.0): enjoy my horrible coding styles :P
 '''
 
@@ -12,7 +15,7 @@ from zipfile import ZipFile
 from pathlib import Path
 
 '''
-r12345678.zip
+myzipfile.zip
 └── r12345678
     ├── code
     │   ├── alice
@@ -24,23 +27,22 @@ r12345678.zip
 
 
 if len(sys.argv) < 2:
-    print ('usage: python3 check.py <path/to/student_id.zip>')
+    print ('usage: python3 check.py <path/to/your/zipfile.zip>')
     exit(0)
 
 zip_filepath = Path(sys.argv[1])
 assert zip_filepath.name.endswith('.zip'), 'The filename should be *.zip'
-sid = zip_filepath.name[:-len('.zip')]
-assert sid == sid.lower(), 'Student ID shoud be in lowercase'
 
 zip_file = ZipFile(zip_filepath)
 has_pdf = False
 has_code = False
-has_sid = False
 has_error = False
+sid = ''
 for name in zip_file.namelist():
+    if sid == '':
+        sid = name.split('/')[0]
     path = Path(name)
     if path == Path(sid) / '':
-        has_sid = True
         continue
     if path == Path(sid) / 'writeup.pdf':
         has_pdf = True
@@ -68,8 +70,8 @@ if not has_pdf:
 if not has_code:
     print('code/ directory is missing!')
     has_error = True
-if not has_sid:
-    print('root student id directory is missing!')
+if sid != sid.lower():
+    print('Student ID shoud be in lowercase!')
     has_error = True
 
 if has_error:

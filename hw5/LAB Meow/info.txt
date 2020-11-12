@@ -1,0 +1,5 @@
+database: catdb
+schema: catdb
+|Version: 10.5.7-MariaDB-1:10.5.7+maria~focal |Database: catdb |schema: catdb |user: meowuser@172.18.0.5 |current_user: meowuser@% |table_name: flag
+
+id,the_flag
