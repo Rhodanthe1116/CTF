@@ -1,0 +1,10 @@
+ssh -D 13579 帳號@ip
+
+ssh -D 13579 b07505027@oasis2.csie.ntu.edu.tw
+
+
+然後如果你要連server (nc那種題目) 可以用port forwarding
+
+ssh -L 8787:target_ip:target_port 帳號@ip
+
+就可以remote(localhost,8787)來連了

