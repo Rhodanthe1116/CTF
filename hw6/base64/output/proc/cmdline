@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-5.4-x86_64 root=UUID=8a53e871-835e-4bfb-a827-b7852b57bc9a rw quiet udev.log_priority=3

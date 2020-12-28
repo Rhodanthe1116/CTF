@@ -1,0 +1,20 @@
+__int64 __fastcall check_input(__int64 a1)
+{
+  __int64 result; // rax
+  signed int i; // [rsp+1Ch] [rbp-4h]
+
+  for ( i = 0; i <= 69; i += step )
+  {
+    arg = a1;
+    num2 = *((_DWORD *)&unk_6D5114 + 10 * somePtr);
+    step = *((_DWORD *)&unk_6D5118 + 10 * somePtr);
+    num3 = *((_DWORD *)&unk_6D511C + 10 * somePtr);
+    num4 = bur_[10 * somePtr];
+    num5 = *((_DWORD *)&unk_6D5110 + 10 * somePtr);
+    um = *((_QWORD *)&unk_6D5100 + 5 * somePtr) + num5;
+    ((void (*)(void))um)();
+    ++somePtr;
+    result = (unsigned int)step;
+  }
+  return result;
+}

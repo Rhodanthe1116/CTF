@@ -1,0 +1,71 @@
+debug029:001F1573 push    ebp
+debug029:001F1574 mov     ebp, esp
+debug029:001F1576 and     esp, 0FFFFFFF0h
+debug029:001F1579 sub     esp, 0A0h
+debug029:001F157F call    near ptr unk_1F1800
+debug029:001F1584 mov     eax, off_1F7180
+debug029:001F1589 mov     [esp+8], eax
+debug029:001F158D mov     dword ptr [esp+4], 80h
+debug029:001F1595 lea     eax, [esp+10h]            
+debug029:001F1599 mov     [esp], eax
+debug029:001F159C call    near ptr unk_1F2794               ; scanf
+debug029:001F15A1 lea     eax, [esp+10h]                    ; input_str
+debug029:001F15A5 mov     [esp], eax
+debug029:001F15A8 call    near ptr unk_1F2754
+debug029:001F15AD sub     eax, 1
+debug029:001F15B0 mov     byte ptr [esp+eax+10h], 0
+debug029:001F15B5 mov     dword ptr [esp+9Ch], 0
+debug029:001F15C0 jmp     short loc_1F15F6
+debug029:001F15C2 ; ---------------------------------------------------------------------------
+debug029:001F15C2
+debug029:001F15C2 loc_1F15C2:                             ; CODE XREF: debug029:001F160D↓j
+debug029:001F15C2 lea     edx, [esp+10h]
+debug029:001F15C6 mov     eax, [esp+9Ch]
+debug029:001F15CD add     eax, edx
+debug029:001F15CF movzx   eax, byte ptr [eax]
+debug029:001F15D2 movsx   eax, al
+debug029:001F15D5 mov     [esp], eax
+debug029:001F15D8 call    near ptr unk_1F1530
+debug029:001F15DD mov     ecx, eax
+debug029:001F15DF lea     edx, [esp+10h]
+debug029:001F15E3 mov     eax, [esp+9Ch]
+debug029:001F15EA add     eax, edx
+debug029:001F15EC mov     [eax], cl
+debug029:001F15EE add     dword ptr [esp+9Ch], 1
+debug029:001F15F6
+debug029:001F15F6 loc_1F15F6:                             ; CODE XREF: debug029:001F15C0↑j
+debug029:001F15F6 lea     eax, [esp+10h]
+debug029:001F15FA mov     [esp], eax
+debug029:001F15FD call    near ptr unk_1F2754
+debug029:001F1602 mov     edx, eax
+debug029:001F1604 mov     eax, [esp+9Ch]
+debug029:001F160B cmp     edx, eax
+debug029:001F160D ja      short loc_1F15C2
+debug029:001F160F mov     dword ptr [esp], offset aCm1FoZb2Z2ZfgQ ; "^cm1;Fo]Zb'2]Z2]ZFg`qZ'g>o?gqfZ?2b'Z`{["...
+debug029:001F1616 call    near ptr unk_1F2754
+debug029:001F161B mov     [esp+8], eax
+debug029:001F161F lea     eax, [esp+10h]
+debug029:001F1623 mov     [esp+4], eax
+debug029:001F1627 mov     dword ptr [esp], offset aCm1FoZb2Z2ZfgQ ; "^cm1;Fo]Zb'2]Z2]ZFg`qZ'g>o?gqfZ?2b'Z`{["...
+debug029:001F162E call    near ptr unk_1F274C
+debug029:001F1633 test    eax, eax
+debug029:001F1635 jz      short loc_1F168B
+debug029:001F1637 mov     dword ptr [esp], offset aIDonTKnowWhatA ; "I don't know what are you doing now."
+debug029:001F163E call    near ptr unk_1F2764
+debug029:001F1643 mov     dword ptr [esp], offset aMaybeIMACalcul ; "Maybe I'm a calculator"
+debug029:001F164A call    near ptr unk_1F2764
+debug029:001F164F mov     dword ptr [esp], offset aMaybeIMAnAtm ; "Maybe I'm an ATM"
+debug029:001F1656 call    near ptr unk_1F2764
+debug029:001F165B mov     dword ptr [esp], offset aMaybeIMABoy ; "Maybe I'm a boy"
+debug029:001F1662 call    near ptr unk_1F2764
+debug029:001F1667 mov     dword ptr [esp], offset aMaybeIMAGirl ; "Maybe I'm a girl"
+debug029:001F166E call    near ptr unk_1F2764
+debug029:001F1673 mov     dword ptr [esp], offset aMaybeIMNotYour ; "Maybe I'm not your homework"
+debug029:001F167A call    near ptr unk_1F2764
+debug029:001F167F mov     dword ptr [esp], offset aButYouLlNeverK ; "But you'll never know."
+debug029:001F1686 call    near ptr unk_1F2764
+debug029:001F168B
+debug029:001F168B loc_1F168B:                             ; CODE XREF: debug029:001F1635↑j
+debug029:001F168B mov     eax, 0
+debug029:001F1690 leave
+debug029:001F1691 retn

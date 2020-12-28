@@ -1,0 +1,171 @@
+__int64 onebyone()
+{
+  __int64 v0; // rdx
+  __int64 result; // rax
+  __int64 v2; // rcx
+  unsigned __int64 v3; // rt1
+  signed int i; // [rsp+Ch] [rbp-A4h]
+  char v5; // [rsp+10h] [rbp-A0h]
+  char v6; // [rsp+60h] [rbp-50h]
+  char v7; // [rsp+61h] [rbp-4Fh]
+  char v8; // [rsp+62h] [rbp-4Eh]
+  char v9; // [rsp+63h] [rbp-4Dh]
+  char v10; // [rsp+64h] [rbp-4Ch]
+  char v11; // [rsp+65h] [rbp-4Bh]
+  char v12; // [rsp+66h] [rbp-4Ah]
+  char v13; // [rsp+67h] [rbp-49h]
+  char v14; // [rsp+68h] [rbp-48h]
+  char v15; // [rsp+69h] [rbp-47h]
+  char v16; // [rsp+6Ah] [rbp-46h]
+  char v17; // [rsp+6Bh] [rbp-45h]
+  char v18; // [rsp+6Ch] [rbp-44h]
+  char v19; // [rsp+6Dh] [rbp-43h]
+  char v20; // [rsp+6Eh] [rbp-42h]
+  char v21; // [rsp+6Fh] [rbp-41h]
+  char v22; // [rsp+70h] [rbp-40h]
+  char v23; // [rsp+71h] [rbp-3Fh]
+  char v24; // [rsp+72h] [rbp-3Eh]
+  char v25; // [rsp+73h] [rbp-3Dh]
+  char v26; // [rsp+74h] [rbp-3Ch]
+  char v27; // [rsp+75h] [rbp-3Bh]
+  char v28; // [rsp+76h] [rbp-3Ah]
+  char v29; // [rsp+77h] [rbp-39h]
+  char v30; // [rsp+78h] [rbp-38h]
+  char v31; // [rsp+79h] [rbp-37h]
+  char v32; // [rsp+7Ah] [rbp-36h]
+  char v33; // [rsp+7Bh] [rbp-35h]
+  char v34; // [rsp+7Ch] [rbp-34h]
+  char v35; // [rsp+7Dh] [rbp-33h]
+  char v36; // [rsp+7Eh] [rbp-32h]
+  char v37; // [rsp+7Fh] [rbp-31h]
+  char v38; // [rsp+80h] [rbp-30h]
+  char v39; // [rsp+81h] [rbp-2Fh]
+  char v40; // [rsp+82h] [rbp-2Eh]
+  char v41; // [rsp+83h] [rbp-2Dh]
+  char v42; // [rsp+84h] [rbp-2Ch]
+  char v43; // [rsp+85h] [rbp-2Bh]
+  char v44; // [rsp+86h] [rbp-2Ah]
+  char v45; // [rsp+87h] [rbp-29h]
+  char v46; // [rsp+88h] [rbp-28h]
+  char v47; // [rsp+8Ah] [rbp-26h]
+  char v48; // [rsp+8Bh] [rbp-25h]
+  char v49; // [rsp+8Ch] [rbp-24h]
+  char v50; // [rsp+8Dh] [rbp-23h]
+  char v51; // [rsp+8Eh] [rbp-22h]
+  char v52; // [rsp+8Fh] [rbp-21h]
+  char v53; // [rsp+90h] [rbp-20h]
+  char v54; // [rsp+91h] [rbp-1Fh]
+  char v55; // [rsp+92h] [rbp-1Eh]
+  char v56; // [rsp+93h] [rbp-1Dh]
+  char v57; // [rsp+94h] [rbp-1Ch]
+  char v58; // [rsp+95h] [rbp-1Bh]
+  char v59; // [rsp+96h] [rbp-1Ah]
+  char v60; // [rsp+97h] [rbp-19h]
+  char v61; // [rsp+98h] [rbp-18h]
+  char v62; // [rsp+99h] [rbp-17h]
+  char v63; // [rsp+9Ah] [rbp-16h]
+  char v64; // [rsp+9Bh] [rbp-15h]
+  char v65; // [rsp+9Ch] [rbp-14h]
+  char v66; // [rsp+9Dh] [rbp-13h]
+  char v67; // [rsp+9Eh] [rbp-12h]
+  char v68; // [rsp+9Fh] [rbp-11h]
+  char v69; // [rsp+A0h] [rbp-10h]
+  char v70; // [rsp+A1h] [rbp-Fh]
+  char v71; // [rsp+A2h] [rbp-Eh]
+  char v72; // [rsp+A3h] [rbp-Dh]
+  char v73; // [rsp+A4h] [rbp-Ch]
+  char v74; // [rsp+A5h] [rbp-Bh]
+  char v75; // [rsp+A6h] [rbp-Ah]
+  unsigned __int64 v76; // [rsp+A8h] [rbp-8h]
+
+  v76 = __readfsqword(0x28u);
+  memset(&v6, 0, 0x40uLL);
+  v75 = 0;
+  v6 = 78;
+  v7 = 50;
+  v8 = 74;
+  v9 = 72;
+  v10 = 4;
+  v11 = 51;
+  v12 = 11;
+  v13 = 121;
+  v14 = 11;
+  v15 = 52;
+  v16 = 73;
+  v17 = 3;
+  v18 = 7;
+  v19 = 6;
+  v20 = 108;
+  v21 = 41;
+  v22 = 53;
+  v23 = 38;
+  v24 = 4;
+  v25 = 86;
+  v26 = 124;
+  v27 = 18;
+  v28 = 99;
+  v29 = 119;
+  v30 = 71;
+  v31 = 23;
+  v32 = 48;
+  v33 = 124;
+  v34 = 55;
+  v35 = 77;
+  v36 = 16;
+  v37 = 64;
+  v38 = 78;
+  v39 = 3;
+  v40 = 78;
+  v41 = 127;
+  v42 = 81;
+  v43 = 77;
+  v44 = 101;
+  v45 = 93;
+  v46 = 98;
+  v47 = 53;
+  v48 = 18;
+  v49 = 88;
+  v50 = 103;
+  v51 = 62;
+  v52 = 69;
+  v53 = 88;
+  v54 = 23;
+  v55 = 39;
+  v56 = 5;
+  v57 = 95;
+  v58 = 68;
+  v59 = 8;
+  v60 = 82;
+  v61 = 53;
+  v62 = 120;
+  v63 = 91;
+  v64 = 73;
+  v65 = 50;
+  v66 = 62;
+  v67 = 63;
+  v68 = 32;
+  v69 = 24;
+  v70 = 74;
+  v71 = 84;
+  v72 = 111;
+  v73 = 71;
+  v74 = 101;
+  for ( i = 0; i <= 999; ++i )
+  {
+    printflike((unsigned __int64)"One by one, What is the serial number of coin%d ?");
+    sub_4004A0(&v5, 0LL, 70LL);
+    scan((unsigned __int64)"%70s");
+    check_input((__int64)&v5);
+    sub_400F65(&v6, &v5);
+  }
+  printflike((unsigned __int64)"Ok, the flag is %s");
+  result = 0LL;
+  v3 = __readfsqword(0x28u);
+  v2 = v3 ^ v76;
+  if ( v3 != v76 )
+    sub_44BD70("Ok, the flag is %s", &v6, v0, v2);
+  return result;
+}
+
+8
+N 78

@@ -1,0 +1,139 @@
+main
+input
+before doSomething
+doSomethingBad
+doMoreBad
+onebyone
+printAndScan
+check_input
+check_input_2
+
+b *0x400B8D
+b *0x44A2F0
+b *0x400BD3
+b *0x40F120
+b *0x40EEA0
+b *0x400BE6
+b *0x400D92
+b *0x400E06
+b *0x400FBA
+
+r
+c
+c
+set $rax=1
+c
+# One by one, What is the serial number of coin0 ?
+[#0] 0x44962e → cmp rax, 0xfffffffffffff000
+[#1] 0x4131e8 → test rax, rax
+[#2] 0x417192 → cmp eax, 0xffffffff
+[#3] 0x46f19a → cmp eax, 0xffffffff
+[#4] 0x40ffdb → and DWORD PTR [rbx+0x74], 0xffffffeb
+[#5] 0x400d97 → lea rax, [rbp-0xa0]
+[#6] 0x4017e9 → mov edi, eax
+[#7] 0x400a9a → hlt 
+.rodata:00000000004AC498 aOneByOneWhatIs db 'One by one, What is the serial number of coin%d ?',0
+.rodata:00000000004AC4CA a70s            db '%70s',0
+.rodata:00000000004AC4CF aOkTheFlagIsS   db 'Ok, the flag is %s',0
+
+.text:0000000000400D4A
+.text:0000000000400D4A loc_400D4A:                             ; CODE XREF: .text:0000000000400DCD↓j
+.text:0000000000400D4A                 mov     eax, [rbp-0A4h]
+.text:0000000000400D50                 mov     esi, eax
+.text:0000000000400D52                 lea     rdi, aOneByOneWhatIs ; "One by one, What is the serial number o"...
+.text:0000000000400D59                 mov     eax, 0
+.text:0000000000400D5E                 call    sub_40FD40
+.text:0000000000400D63                 lea     rax, [rbp-0A0h]
+.text:0000000000400D6A                 mov     edx, 46h ; 'F'
+.text:0000000000400D6F                 mov     esi, 0
+.text:0000000000400D74                 mov     rdi, rax
+.text:0000000000400D77                 call    near ptr 4004A0h
+.text:0000000000400D7C                 lea     rax, [rbp-0A0h]
+.text:0000000000400D83                 mov     rsi, rax
+.text:0000000000400D86                 lea     rdi, a70s       ; "%70s"
+.text:0000000000400D8D                 mov     eax, 0
+.text:0000000000400D92                 call    loc_40FEC0
+.text:0000000000400D97                 lea     rax, [rbp-0A0h]
+.text:0000000000400D9E                 mov     rdi, rax
+.text:0000000000400DA1                 call    sub_400E06
+.text:0000000000400DA6                 lea     rdx, [rbp-0A0h]
+.text:0000000000400DAD                 lea     rax, [rbp-50h]
+.text:0000000000400DB1                 mov     rsi, rdx
+.text:0000000000400DB4                 mov     rdi, rax
+.text:0000000000400DB7                 call    sub_400F65
+.text:0000000000400DBC                 add     dword ptr [rbp-0A4h], 1
+.text:0000000000400DC3
+
+.text:0000000000400DC3 loc_400DC3:                             ; CODE XREF: .text:0000000000400D48↑j
+.text:0000000000400DC3                 cmp     dword ptr [rbp-0A4h], 3E7h
+.text:0000000000400DCD                 jle     loc_400D4A
+.text:0000000000400DD3                 lea     rax, [rbp-50h]
+.text:0000000000400DD7                 mov     rsi, rax
+.text:0000000000400DDA                 lea     rdi, aOkTheFlagIsS ; "Ok, the flag is %s"
+.text:0000000000400DE1                 mov     eax, 0
+.text:0000000000400DE6                 call    sub_40FD40
+.text:0000000000400DEB                 mov     eax, 0
+.text:0000000000400DF0                 mov     rcx, [rbp-8]
+.text:0000000000400DF4                 xor     rcx, fs:28h
+.text:0000000000400DFD                 jz      short locret_400E04
+.text:0000000000400DFF                 call    check
+
+dword_6D5120 
+bur?
+
+bur[17420]
+
+step = 2 1
+num2 = 8
+num3 = 
+
+arg + i + 4LL + 1) != 135 * *(char *)(arg + num2 + i)
+
+pass for i in range(0, step)
+
+3FB794 + 5826 = 400FBA
+400FBA – 8492 = 3F8B28
+3815
+
+10 -> A
+5 -> 
+
+someFunc, num5 num2 step 
+
+x/36dw 0x6D5120
+
+x/36xw 0x6D5100
+someFunc 0 0 0 
+num5  num2 step  num3 
+burData padding
+0x6d5160:   0x00003815   0x0000001a   0x00000002   0x0000022d
+0x6d5170:       0x00000247
+bur 247
+
+someFunc, num5 
+num2 
+step 
+num3 22d 
+bur 247
+
+x/72aw 0x6D5100
+0x89FF2F
+
+set logging file <filename>
+set logging on
+然後用print指令輸出的東西就會進到檔案裡
+set logging off
+
+set logging file ./bur
+set logging on
+x/1000000hw 0x6D5100
+set logging off
+
+
+b *0x44A2F0
+b *0x4011c8
+
+r
+c
+set $rax=1
+c

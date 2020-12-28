@@ -1,0 +1,15 @@
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+2122/tcp  open  caupc-remote
+8891/tcp  open  ddi-tcp-4
+8892/tcp  open  seosload
+8893/tcp  open  ddi-tcp-6
+8894/tcp  open  ddi-tcp-7
+30001/tcp open  pago-services1
+30002/tcp open  pago-services2
+30003/tcp open  amicon-fpsu-ra
+30004/tcp open  amicon-fpsu-s
+44301/tcp open  unknown
+44302/tcp open  unknown
+44303/tcp open  unknown

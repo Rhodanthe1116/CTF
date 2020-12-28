@@ -1,0 +1,167 @@
+40332E
+76B574CC: The instruction at 0x76B574CC referenced memory at 0x1E01. The memory could not be written -> 00001E01 (exc.code c0000005, tid 1464
+
+60FE68 MZ
+160000 shift 160080
+
+16C750
+
+4014E0
+
+401A8E input
+
+15C750 call this
+
+0064C82A mov     al, [edi]
+:0015C81D jmp     loc_15C76E
+
+0015C887 call    dword ptr [esi+0C044h]
+debug035:0015C940 call    eax
+ntdll.dll:77E01B2C retn    14h
+debug033:001FC929 jmp     short $+2
+
+debug034:0016C914 call    ecx ok
+debug034:0016C924 jmp     near ptr unk_1614E0 ??
+debug034:0016C929 jmp     short $+2 ok
+debug034:0016C940 call    eax ok
+
+6413de call near ptr unk_641573
+
+debug031:0064C924 jmp     near ptr unk_6414E0
+83h                      ; CODE XREF: debug031:0064C924↓j
+debug031:006414E1 db 0ECh
+debug031:006414E2 db  0Ch
+debug031:006414E3 db 0C7h
+debug031:006414E4 db    5
+debug031:006414E5 db  98h
+debug031:006414E6 db  53h ; S
+debug031:006414E7 db  64h ; d
+debug031:006414E8 db    0
+
+
+debug031:006413D2 mov     [esp+4], eax
+debug031:006413D6 mov     eax, dword_645018
+debug031:006413DB mov     [esp], eax
+debug031:006413DE call    near ptr unk_641573
+debug031:006413E3 mov     ecx, dword_645008
+debug031:006413E9 mov     dword_64500C, eax
+debug031:006413EE test    ecx, ecx
+debug031:006413F0 jz      loc_6414AB
+debug031:006413F6 mov     edx, dword_645004
+
+### Break HERE!!!
+debug031:006413E3 mov     ecx, dword_645008
+
+# new
+debug033:0063C750 pusha
+
+0x6313bcL
+0x6313c2L
+0x6313c4L
+0x6313c9L
+0x6313cdL
+0x6313d2L
+0x6313d6L
+0x6313dbL
+0x6313deL
+Debugger: thread 3024 has exited (code 0)
+0x6313e3L
+0x6313e9L
+0x6313eeL
+0x6313f0L
+0x6314abL
+0x6314aeL
+Debugger: process has exited (exit code 0)
+0xffffffffffffffffL
+0xffffffffffffffffL
+
+0063C750 – 6313de = B372
+
+# new
+debug029:001FC750 pusha
+
+001FC750 - B372 = 1F13DE
+
+debug036:001F13DE call    loc_1F1573                    ; main
+debug036:001F13E3 mov     ecx, dword_1F5008
+debug036:001F13E9 mov     dword_1F500C, eax
+debug036:001F13EE test    ecx, ecx
+debug036:001F13F0 jz      loc_1F14AB
+debug036:001F13F6 mov     edx, dword_1F5004
+debug036:001F13FC test    edx, edx
+debug036:001F13FE jnz     short loc_1F140A
+debug036:001F1400 call    near ptr unk_1F27C4 
+debug036:001F1405 mov     eax, dword_1F500C
+
+debug036:001F14AB
+debug036:001F14AB loc_1F14AB:                             ; CODE XREF: debug036:001F13F0↑j
+debug036:001F14AB mov     [esp], eax
+debug036:001F14AE call    near ptr unk_1F279C                # exit
+debug036:001F14B3 lea     esi, [esi+0]
+debug036:001F14B9 lea     edi, [edi+0]
+
+run 1Bh times
+run 32h times
+
+Stack[00002E9C]:0060FCD0 db  5Dh ; ]
+Stack[00002E9C]:0060FCD1 db  33h ; 3
+Stack[00002E9C]:0060FCD2 db  5Ch ; \
+Stack[00002E9C]:0060FCD3 db  5Dh ; ]
+Stack[00002E9C]:0060FCD4 db  33h ; 3
+Stack[00002E9C]:0060FCD5 db  5Ch ; \
+Stack[00002E9C]:0060FCD6 db  5Dh ; ]
+Stack[00002E9C]:0060FCD7 db  33h ; 3
+Stack[00002E9C]:0060FCD8 db  5Ch ; \
+Stack[00002E9C]:0060FCD9 db  5Dh ; ]
+Stack[00002E9C]:0060FCDA db  33h ; 3
+Stack[00002E9C]:0060FCDB db  5Ch ; \
+Stack[00002E9C]:0060FCDC db  5Dh ; ]
+Stack[00002E9C]:0060FCDD db  30h ; 0
+Stack[00002E9C]:0060FCDE db  33h ; 3
+Stack[00002E9C]:0060FCDF db  5Ch ; \
+Stack[00002E9C]:0060FCE0 db  5Dh ; ]
+Stack[00002E9C]:0060FCE1 db  33h ; 3
+Stack[00002E9C]:0060FCE2 db  5Ch ; \
+Stack[00002E9C]:0060FCE3 db  30h ; 0
+Stack[00002E9C]:0060FCE4 db  33h ; 3
+Stack[00002E9C]:0060FCE5 db  30h ; 0
+Stack[00002E9C]:0060FCE6 db  5Dh ; ]
+Stack[00002E9C]:0060FCE7 db  33h ; 3
+Stack[00002E9C]:0060FCE8 db  30h ; 0
+Stack[00002E9C]:0060FCE9 db  5Dh ; ]
+Stack[00002E9C]:0060FCEA db  33h ; 3
+Stack[00002E9C]:0060FCEB db    0
+Stack[00002E9C]:0060FCEC db    0
+sdfsdfsdfsdfsadfsdfadasdasd 27
+
+debug029:001F3320 unk_1F3320 db  5Eh ; ^                  ; DATA XREF: debug029:001F160F↑o
+debug029:001F3320                                         ; debug029:001F1627↑o
+
+^cm1;Fo]Zb'2]Z2]ZFg`qZ'g>o?gqfZ?2b'Z`{[Z0E3ZEgZ{oZ'o03oqZ0E3Zb'2]Z2]Zb'oZ\/0j8
+
+0
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ 
+
+# new
+b 
+debug034:0063160F mov     dword ptr [esp], 
+
++N@!Jt&P(w0<93o\j'2nf/>Eg{_q]b`I?[FQmr%,5^1}"S#csD.6B|TWM4vHGRl)AydKY7O-VCaezp*:~=xXkKKU$Zh;L8u
+
+
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ 
++N@!Jt&P(w0<93o\j'2nf/>Eg{_q]b`I?[FQmr%,5^1}"S#csD.6B|TWM4vHGRl)AydKY7O-VCaezp*:~=xXkKKU$Zh;L8u
+
+
+
+b 631573
+c
+b 63160F
+
+~}|{`_^]\\[@?>=<;:/.-,+*)(\'&%$#"!ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba9876543210
+ u8L;hZ$UKKkXx=~:*pzeaCV-O7KYdyA)lRGHv4MWT|B6.Dsc#S"}1^5,%rmQF[?I`b]q_{gE>/fn2'j\o39<0w(P&tJ!@N+
+
+4E = 78
+
+strlen
+strncmp
