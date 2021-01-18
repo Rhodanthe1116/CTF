@@ -1,0 +1,4 @@
+python3 flask_session_cookie_manager3.py encode -s 'Ludibrium-Secret-133.221.333.123.111_kvYAtbZkwkhyPv5B' -t '{"id": 0, "filenames": [], "debug": True}'
+
+decode
+python3 flask_session_cookie_manager3.py decode -s 'Ludibrium-Secret-133.221.333.123.111_kvYAtbZkwkhyPv5B' -c 'eyJkZWJ1ZyI6dHJ1ZSwiZmlsZW5hbWVzIjpbXSwiaWQiOjB9.X_fXLQ.EniCFT64n-u9tUneoB6m5ahLQLY'

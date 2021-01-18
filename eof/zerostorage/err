@@ -1,0 +1,76 @@
+Ludibrium-Secret-133.221.333.123.111_kvYAtbZkwkhyPv5B
+
+Internal Server Error:
+- _debug: False
+- state: &lt;starlette.datastructures.State object at 0x7f6de2520490&gt;
+- router: &lt;starlette.routing.Router object at 0x7f6de25204c0&gt;
+- exception_handlers: {&lt;class 'starlette.exceptions.HTTPException'&gt;: &lt;function exception_handler at 0x7f6de251e1f0&gt;}
+- user_middleware: [Middleware(SessionMiddleware, secret_key='Ludibrium-Secret-133.221.333.123.111_kvYAtbZkwkhyPv5B', same_site='Strict', https_only=False)]
+- middleware_stack: &lt;starlette.middleware.errors.ServerErrorMiddleware object at 0x7f6de2520610&gt;
+- __module__: starlette.applications
+- __doc__: 
+    Creates an application instance.
+
+    **Parameters:**
+
+    * **debug** - Boolean indicating if debug tracebacks should be returned on errors.
+    * **routes** - A list of routes to serve incoming HTTP and WebSocket requests.
+    * **middleware** - A list of middleware to run for every request. A starlette
+    application will always automatically include two middleware classes.
+    `ServerErrorMiddleware` is added as the very outermost middleware, to handle
+    any uncaught errors occuring anywhere in the entire stack.
+    `ExceptionMiddleware` is added as the very innermost middleware, to deal
+    with handled exception cases occuring in the routing or endpoints.
+    * **exception_handlers** - A dictionary mapping either integer status codes,
+    or exception class types onto callables which handle the exceptions.
+    Exception handler callables should be of the form
+    `handler(request, exc) -&gt; response` and may be be either standard functions, or
+    async functions.
+    * **on_startup** - A list of callables to run on application startup.
+    Startup handler callables do not take any arguments, and may be be either
+    standard functions, or async functions.
+    * **on_shutdown** - A list of callables to run on application shutdown.
+    Shutdown handler callables do not take any arguments, and may be be either
+    standard functions, or async functions.
+    
+- __init__: &lt;bound method Starlette.__init__ of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- build_middleware_stack: &lt;bound method Starlette.build_middleware_stack of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- routes: [&lt;starlette.routing.Route object at 0x7f6de2503640&gt;, &lt;starlette.routing.Route object at 0x7f6de2503700&gt;, &lt;starlette.routing.Route object at 0x7f6de2503eb0&gt;, &lt;starlette.routing.Route object at 0x7f6de2503f70&gt;, &lt;starlette.routing.Route object at 0x7f6de2503fd0&gt;, &lt;starlette.routing.Route object at 0x7f6de25037c0&gt;, &lt;starlette.routing.Route object at 0x7f6de2520130&gt;, &lt;starlette.routing.Route object at 0x7f6de25201c0&gt;, &lt;starlette.routing.Route object at 0x7f6de2520250&gt;, &lt;starlette.routing.Mount object at 0x7f6de2520220&gt;]
+- debug: False
+- url_path_for: &lt;bound method Starlette.url_path_for of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- __call__: &lt;bound method Starlette.__call__ of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- on_event: &lt;bound method Starlette.on_event of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- mount: &lt;bound method Starlette.mount of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- host: &lt;bound method Starlette.host of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- add_middleware: &lt;bound method Starlette.add_middleware of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- add_exception_handler: &lt;bound method Starlette.add_exception_handler of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- add_event_handler: &lt;bound method Starlette.add_event_handler of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- add_route: &lt;bound method Starlette.add_route of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- add_websocket_route: &lt;bound method Starlette.add_websocket_route of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- exception_handler: &lt;bound method Starlette.exception_handler of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- route: &lt;bound method Starlette.route of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- websocket_route: &lt;bound method Starlette.websocket_route of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- middleware: &lt;bound method Starlette.middleware of &lt;starlette.applications.Starlette object at 0x7f6de2520340&gt;&gt;
+- __dict__: {'_debug': False, 'state': &lt;starlette.datastructures.State object at 0x7f6de2520490&gt;, 'router': &lt;starlette.routing.Router object at 0x7f6de25204c0&gt;, 'exception_handlers': {&lt;class 'starlette.exceptions.HTTPException'&gt;: &lt;function exception_handler at 0x7f6de251e1f0&gt;}, 'user_middleware': [Middleware(SessionMiddleware, secret_key='Ludibrium-Secret-133.221.333.123.111_kvYAtbZkwkhyPv5B', same_site='Strict', https_only=False)], 'middleware_stack': &lt;starlette.middleware.errors.ServerErrorMiddleware object at 0x7f6de2520610&gt;}
+- __weakref__: None
+- __repr__: &lt;method-wrapper '__repr__' of Starlette object at 0x7f6de2520340&gt;
+- __hash__: &lt;method-wrapper '__hash__' of Starlette object at 0x7f6de2520340&gt;
+- __str__: &lt;method-wrapper '__str__' of Starlette object at 0x7f6de2520340&gt;
+- __getattribute__: &lt;method-wrapper '__getattribute__' of Starlette object at 0x7f6de2520340&gt;
+- __setattr__: &lt;method-wrapper '__setattr__' of Starlette object at 0x7f6de2520340&gt;
+- __delattr__: &lt;method-wrapper '__delattr__' of Starlette object at 0x7f6de2520340&gt;
+- __lt__: &lt;method-wrapper '__lt__' of Starlette object at 0x7f6de2520340&gt;
+- __le__: &lt;method-wrapper '__le__' of Starlette object at 0x7f6de2520340&gt;
+- __eq__: &lt;method-wrapper '__eq__' of Starlette object at 0x7f6de2520340&gt;
+- __ne__: &lt;method-wrapper '__ne__' of Starlette object at 0x7f6de2520340&gt;
+- __gt__: &lt;method-wrapper '__gt__' of Starlette object at 0x7f6de2520340&gt;
+- __ge__: &lt;method-wrapper '__ge__' of Starlette object at 0x7f6de2520340&gt;
+- __new__: &lt;built-in method __new__ of type object at 0x7f6de47ae7c0&gt;
+- __reduce_ex__: &lt;built-in method __reduce_ex__ of Starlette object at 0x7f6de2520340&gt;
+- __reduce__: &lt;built-in method __reduce__ of Starlette object at 0x7f6de2520340&gt;
+- __subclasshook__: &lt;built-in method __subclasshook__ of type object at 0x55e0820be4a0&gt;
+- __init_subclass__: &lt;built-in method __init_subclass__ of type object at 0x55e0820be4a0&gt;
+- __format__: &lt;built-in method __format__ of Starlette object at 0x7f6de2520340&gt;
+- __sizeof__: &lt;built-in method __sizeof__ of Starlette object at 0x7f6de2520340&gt;
+- __dir__: &lt;built-in method __dir__ of Starlette object at 0x7f6de2520340&gt;
+- __class__: &lt;class 'starlette.applications.Starlette'&gt;

@@ -1,0 +1,30 @@
+{
+    'rule': '/login',
+    'is_leaf': True,
+    'map': Map([ 
+        < Rule '/hey_guys_this_is_the_flag_route' (OPTIONS, GET, HEAD) -> get_flag > ,
+        < Rule '/login' (OPTIONS, POST) -> login > ,
+        < Rule '/' (OPTIONS, GET, HEAD) -> index > ,
+        < Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static > 
+    ]), 
+    'strict_slashes': True, 
+    'merge_slashes': True, 
+    'subdomain': '', 
+    'host': None, 
+    'defaults': None, 
+    'build_only': False, 
+    'alias': False, 
+    'websocket': False, 
+    'methods': {'OPTIONS', 'POST'}, 
+    'endpoint': 'login', 
+    'redirect_to': None, 
+    'arguments': set(), 
+    '_trace': [(False, '|'), (False, '/'), (False, 'login')], 
+    '_converters': {}, 
+    '_regex': re.compile('^\\|/+?login$'), 
+    '_argument_weights': [], 
+    'provide_automatic_options': True, 
+    '_static_weights': [(0, -5)], 
+    '_build': < bound method < builder: '/login' > of < Rule '/login' (OPTIONS, POST) -> login>>, 
+    '_build_unknown': < bound method < builder: '/login' > of < Rule '/login' (OPTIONS, POST) -> login>>
+}

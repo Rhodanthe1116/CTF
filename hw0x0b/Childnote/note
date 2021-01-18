@@ -1,0 +1,13 @@
+tcache slash -> global_max_fast
+
+free(*mem)
+mov rdi "/bin/sh"
+system()
+
+malloc(size)
+mov rdi size
+...
+jmp
+mov rdi "/bin/sh"
+system()
+
